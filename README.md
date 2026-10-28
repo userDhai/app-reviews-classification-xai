@@ -7,6 +7,8 @@ NLP pipeline designed to classify mobile app reviews into three primary categori
 
 This project leverages fine-tuned transformer architectures (RoBERTa-Base and RoBERTa-Large), addresses class imbalance through oversampling and weighted loss functions, provides model interpretability via SHAP (Explainable AI), and benchmarks results against zero-shot learning models.
 
+
+
 **Features**
 * **Text Preprocessing:** Custom cleaning functions to remove URLs, special characters, superfluous whitespace, and character repetition.
 * **Class Imbalance Handling:**
@@ -17,6 +19,8 @@ This project leverages fine-tuned transformer architectures (RoBERTa-Base and Ro
   2. Advanced training configurations: Cosine learning rate scheduler, label smoothing, FP16 mixed precision, and early stopping.
 * **Zero-Shot Baseline:** Evaluates zero-shot performance using facebook/bart-large-mnli for direct comparison with fine-tuned models.
 * **Model Explainability (XAI):** Integrated SHAP (SHapley Additive exPlanations) text plots to highlight token-level contributions to class predictions.
+
+
 
 **Tech Stack & Dependencies**
 * **Language:** Python 3.x
