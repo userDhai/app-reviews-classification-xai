@@ -1,13 +1,13 @@
-# app-reviews-classification-xai
+**app-reviews-classification-xai**
 
-An end-to-end Natural Language Processing (NLP) pipeline designed to classify mobile app reviews into three primary categories:
+NLP pipeline designed to classify mobile app reviews into three primary categories:
 1. Bug Reports
 2. Feature Requests
 3. User Experience
 
 This project leverages fine-tuned transformer architectures (RoBERTa-Base and RoBERTa-Large), addresses class imbalance through oversampling and weighted loss functions, provides model interpretability via SHAP (Explainable AI), and benchmarks results against zero-shot learning models.
 
-## Features
+**Features**
 * **Text Preprocessing:** Custom cleaning functions to remove URLs, special characters, superfluous whitespace, and character repetition.
 * **Class Imbalance Handling:**
   1. Oversampling: Random minority oversampling applied exclusively to the training dataset.
@@ -18,8 +18,7 @@ This project leverages fine-tuned transformer architectures (RoBERTa-Base and Ro
 * **Zero-Shot Baseline:** Evaluates zero-shot performance using facebook/bart-large-mnli for direct comparison with fine-tuned models.
 * **Model Explainability (XAI):** Integrated SHAP (SHapley Additive exPlanations) text plots to highlight token-level contributions to class predictions.
 
-## Tech Stack & Dependencies
-
+**Tech Stack & Dependencies**
 * **Language:** Python 3.x
 * **Core Frameworks:**
   * **PyTorch & Hugging Face Transformers** — Model architecture and fine-tuning.
